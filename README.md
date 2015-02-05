@@ -9,7 +9,7 @@ The API documentation can be found here: https://github.com/schedjoules/calendar
 
 ## Getting started
  - Download schedjoules-websdk.zip or checkout the repository
- - Read the Documentation at [http://schedjoules.github.io/web-SDK/](http://schedjoules.github.io/web-SDK/)
+ - Read the Documentation at [https://github.com/schedjoules/Web-js-SDK/](https://github.com/schedjoules/Web-js-SDK)
  - Take a look at the demo
  - Read the "about the demo" section below
 
