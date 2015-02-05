@@ -1,0 +1,162 @@
+/* styles */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  background: #ddd;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+header[role="banner"] {
+  height: 55px;
+}
+
+.wrapper {
+  padding: 20px 40px 40px 40px;
+}
+
+.locations,
+.locales {
+  float: right;
+}
+
+.locales {
+  margin-right: 5px;
+}
+
+section li {
+  position: relative;
+}
+
+section li a {
+  padding: 5px 0 5px 50px;
+  color: #444;
+  border-bottom: 1px solid #c0c0c0;
+  text-decoration: none;
+  display: block;
+}
+section li a:hover {
+  text-decoration: underline;
+}
+
+section a img {
+  width: 23px;
+  height: 23px;
+  border: 1px solid #c0c0c0;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 50%;
+}
+
+section li:last-child a {
+  border-bottom: none;
+}
+
+/* final page */
+
+.final h1 {
+  margin-bottom: 13px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+
+/* different link icons */
+
+section .page {
+  background: url('../images/icons.png') no-repeat 100% -66px;
+}
+section .calendar {
+  background: url('../images/icons.png') no-repeat 100% 9px;
+}
+
+/* steps */
+
+.steps {
+  text-align: center;
+}
+
+.step {
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #444;
+}
+.step.active {
+  background: #444;
+}
+.step:last-child {
+  margin-right: 0;
+}
+
+
+/*
+ *  buttons 
+ */
+
+/* back to home */
+.backtohome {
+  font-size: 10px;
+  color: #444;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background: url('../images/icons.png') no-repeat 83% -136px;
+  overflow: hidden;
+  text-indent: -100px;
+  height: 20px;
+  width: 20px;
+}
+.backtohome:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 400px) {
+  .backtohome {
+    max-width: 50px;
+    white-space: wrap;
+  }
+}
+
+.btn {
+  padding: 10px 50px;
+  text-align: center;
+}
+.calltoaction {
+  width: 280px;
+  margin: 35px auto;
+  clear: both;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  background: #444;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-top: 40px;
+    background: #fff;
+  }
+
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
