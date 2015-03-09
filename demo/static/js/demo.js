@@ -32,6 +32,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				return new RegExp('(^| )' + $class + '( |$)', 'gi').test($element.$class);
 			}
 		}
+
+		/**
+		 * Remove element
+		 */
+		Utils.prototype.remove = function($element) {
+	    if ($element.parentNode) {
+	      $element.parentNode.removeChild($element);
+	    }
+	  }
 	
 		return new Utils();
 	})();
@@ -56,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var $wrapper = document.getElementsByClassName('wrapper')[0];
 	
 		// Remove current container, add new page
-		$container.remove();
+		Utils.remove($container);
 		$wrapper.appendChild($content);
 	}
 
